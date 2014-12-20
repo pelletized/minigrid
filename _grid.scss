@@ -1,12 +1,14 @@
-.clearfix:after {
-content:"";
-display:table;
-clear:both;
+%clearfix {
+	&:after {
+	content:"";
+	display:table;
+	clear:both;
+	}
 }
 
 //grid
 .row {
-@extend .clearfix;
+@extend %clearfix;
 max-width:960px;
 margin:0 auto;
 }
